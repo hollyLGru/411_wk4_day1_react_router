@@ -7,15 +7,15 @@ import { Routes, Route, useParams } from 'react-router-dom';
 // Container, Paper, Chip //
 
 const Car = (props) => {
-    let {carId} = useParams();
-    // console.log(carId)
-
- let findCar= carId.map((carrs, index) => {
-        return (
-          carId
-        )
-      })
-console.log(findCar)
+    const {carId} = useParams();
+    
+    function findCar() {
+        return cars.id === carId
+    }
+    
+    const carfilter = cars.find(findCar);
+    
+    console.log(carfilter)
 
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
