@@ -12,6 +12,18 @@ import React from 'react'
 import { Routes, Route } from 'react-router'
 // Write component imports here //
 
+// Local imports. Import components we built ourselves
+import Home from './components/Home';
+import About from './components/About';
+
+const Router = () => {
+    return (
+        <Routes>
+            <Route path="/*" element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+        </Routes>
+    );
+}
 
 
-// Start Router function here //
+export default Router;
