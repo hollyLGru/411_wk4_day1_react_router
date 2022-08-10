@@ -1,16 +1,33 @@
 import React from 'react'
 import cars from '../cars.json'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Routes, Route, useParams } from 'react-router-dom';
 
 // import MUI components here //
 // Container, Paper, Chip //
 
 const Car = (props) => {
-    const carId = useParams().carId
+    let {carId} = useParams();
+    // console.log(carId)
+
+ let findCar= carId.map((carrs, index) => {
+        return (
+          carId
+        )
+      })
+console.log(findCar)
+
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 
     return (
-        <h1>A specific car</h1>
+    <div>
+        {/* {carfilter.map((car, index) => {
+            return(
+                <h1>{car.Name}</h1>
+                )
+        })} */}
+
+    </div>
     )
 }
 
