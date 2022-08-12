@@ -18,7 +18,7 @@ const Car = (props) => {
     <div>
         {findCar.map((car, index) => {
             return (
-                <h1>{car.index} </h1> 
+                <h1>{car.name} </h1> 
             )
             })}
     </div>
